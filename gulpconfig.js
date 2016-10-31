@@ -3,7 +3,7 @@
   inhabited by source & build folder variables
   and gulp task configurations (tasks located in ./gulp/**)
 */
-var src               = './themes/edutheme',
+var src               = './themes/edutheme/',
     dest              = './themes/edutheme/',
     version           = "1.0.0";
 
@@ -25,7 +25,7 @@ module.exports = {
     browser: "google chrome"
   },
   sass: {                                         // https://www.npmjs.com/package/gulp-sass
-    src: src + "/styles/**/*.scss",
+    src: src + "styles/**/*.scss",
     dest: dest
   }
 };

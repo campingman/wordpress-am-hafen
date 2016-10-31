@@ -29,7 +29,16 @@
 					<label>E-Mail:</label>
 					<a href="st.pauli@schule-am-hafen.eu">st.pauli@schule-am-hafen.eu</a><br>
 					Friedrichstraße 55<br>
-					20359 Hamburg <a href="st.pauli@schule-am-hafen.eu">maps</a>
+					20359 Hamburg
+			</address>
+			<address>
+				<h3>Standort Oberstufe</h3>
+					<label>Telefon-Nr.:</label>
+					<a href="tel:+4940428973265">040/428973 -265</a><br>
+					<label>E-Mail:</label>
+					<a href="oberstufe@schule-am-hafen.eu">oberstufe@schule-am-hafen.eu</a><br>
+					Budapester Straße 58<br>
+					20359 Hamburg
 			</address>
 		</section>
 
