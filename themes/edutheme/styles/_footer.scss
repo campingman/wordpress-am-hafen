@@ -1,0 +1,15 @@
+.site-footer {
+  background-color: color($brand, 400);
+
+  .box {
+    background-color: color($brand, 300);
+    color: color($brand, 500);
+
+    p {
+      text-align: left;
+      font-size: 0.85em;
+      margin: 0;
+      padding: $spacer*0.5 $spacer;
+    }
+  }
+}
