@@ -1,5 +1,5 @@
-# Wordpress Development within a Docker Container and Gulp Asset Chain
+# Wordpress Theme Development within Docker Containers and Gulp Asset Chain
+You need npm, gulp & docker installed…
 
 - `npm install`
-
-- `docker-compose up`
+- `docker-compose up` & `npm start`
