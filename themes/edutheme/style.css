@@ -445,7 +445,7 @@ ul.sub-menu {
   border: 2px solid #C8D4BA;
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1); }
   ul.sub-menu a {
-    text-transform: capitalize; }
+    text-transform: none; }
 
 .menu-item:hover ul.sub-menu {
   display: block; }
@@ -622,3 +622,6 @@ a {
   .archive > article .entry-summary p {
     margin: 0;
     line-height: 1.3em; }
+
+time.updated {
+  display: none; }
