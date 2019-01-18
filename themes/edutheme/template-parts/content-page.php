@@ -11,11 +11,28 @@
 </aside>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
 
-	<?php twentysixteen_post_thumbnail(); ?>
+	<?php if (has_post_thumbnail( $post->ID ) ): ?>
+	  <?php
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+		$alt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
+		$caption = $attachment_title = get_the_excerpt(get_post_thumbnail_id( $post->ID ));
+		?>
+		<header class="entry-header">
+			<div class="bg" style="background-image: url('<?php echo $image[0]; ?>')">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+			<small><?php echo $caption ?></small>
+		</header><!-- .entry-header -->
+	<?php else: ?>
+		<header class="entry-header">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+	<?php endif; ?>
+
+	<?php
+		// twentysixteen_post_thumbnail();
+	?>
 
 	<div class="entry-content">
 		<?php
