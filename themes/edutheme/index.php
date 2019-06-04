@@ -32,10 +32,12 @@ get_header();
 			<aside></aside>
 			<div class="archive">
 		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1>Neuigkeiten aus dem Schulalltag</h1>
-			</header><!-- .page-header -->
+			<header class="entry-header">
+				<div class="bg" style="background-image: url('http://schule-am-hafen.eu/wp-content/uploads/2019/01/DSC02466.jpeg')">
+					<h1 class="entry-title">Neuigkeiten aus dem Schulalltag</h1>
+				</div>
+				<small><?php echo $caption ?></small>
+			</header><!-- .entry-header -->
 
 			<?php
 			// Start the Loop.

@@ -26,6 +26,7 @@ $color-lightest: #F6F6F6;
 
 // Vendor files
 @import "vendor/normalize";
+@import "../genericons/genericons";
 
 // External files
 // @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600";
@@ -141,6 +142,7 @@ h6, {
       width:100%;
       height:35vh;
       background-size:cover;
+      background-position: center;
       border-bottom: 2px solid $color-green-1;
       .entry-title {
         font-size: 3em;
@@ -169,6 +171,10 @@ h6, {
     > article {
       flex-basis: 85%;
       padding-left: $spacer;
+      @include respond-up-to('sm') {
+        flex-basis: 100%;
+        padding-left: 0;
+      }
     }
 
     > aside {
@@ -177,6 +183,9 @@ h6, {
       background-repeat: no-repeat;
       background-position: right top;
       background-size: 42px;
+      @include respond-up-to('sm') {
+        display: none;
+      }
     }
   }
 }
@@ -275,4 +284,54 @@ a {
 
 time.updated {
   display: none;
+}
+
+
+/**
+ * 2.0 - Genericons
+ */
+
+.menu-item-has-children a:after,
+.social-navigation a:before,
+.dropdown-toggle:after,
+.bypostauthor > article .fn:after,
+.comment-reply-title small a:before,
+.pagination .prev:before,
+.pagination .next:before,
+.pagination .nav-links:before,
+.pagination .nav-links:after,
+.search-submit:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-family: "Genericons";
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-align: center;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: top;
+  @include respond-down-to('sm') {
+    // display: none;
+  }
+}
+
+button.dropdown-toggle {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+
+  span { display: none; }
+
+  &:after {
+    font-size: 20px;
+    margin-top: 4px;
+    content: "\f431";
+    color: color($brand, 600);
+  }
 }
