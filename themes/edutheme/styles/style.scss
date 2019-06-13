@@ -115,7 +115,8 @@ h6, {
 }
 
 .box {
-  margin: 0 auto 0 $spacer;
+  // margin: 0 auto 0 $spacer;
+  margin: 0 auto 0;
   padding: 0 $spacer;
   max-width: 1020px;
   background: color($gray, 100);
@@ -133,9 +134,19 @@ h6, {
   margin-right: $spacer*2;
   flex-basis: 70%;
   flex-grow: 3;
+  article.post {
+    margin: $spacer*2 0 $spacer*2 0;
+    padding-bottom: $spacer/2;
+    // border-bottom: 2px solid color($gray, 200);
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
+  }
   .entry-header {
-    margin-bottom: $spacer*2;
+    margin-bottom: $spacer;
     .bg {
       display: flex;
       align-items: flex-end;
@@ -147,7 +158,7 @@ h6, {
       .entry-title {
         font-size: 3em;
         line-height: 1em;
-        margin: 0 0 $spacer/3 $spacer/1.5;
+        margin: 0 0 $spacer/2 $spacer/1.5;
         color: white;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.20);
       }
@@ -196,7 +207,7 @@ h6, {
 img.size-post-thumbnail {
   width: 100%;
   height: auto;
-  margin: 0 0 $spacer 0;
+  margin: 0 0 $spacer/2 0;
 }
 
 img.size-medium {
@@ -265,12 +276,12 @@ a {
     clear: both;
 
     .entry-title {
-      font-size: 1.2em;
-      margin-bottom: $spacer*0.5;
+      font-size: 1.4em;
+      margin: 0;
     }
 
     .post-thumbnail {
-      width: 33%;
+      width: 45%;
       float: left;
       margin-right: $spacer;
     }
@@ -278,6 +289,12 @@ a {
     .entry-summary p {
       margin: 0;
       line-height: 1.3em;
+    }
+    .entry-footer {
+      text-align: right;
+      margin-top: $spacer;
+      clear: both;
+      border-top: 2px solid color($gray,200);
     }
   }
 }

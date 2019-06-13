@@ -1099,7 +1099,7 @@ h6 {
   color: #1D1D1B; }
 
 .box {
-  margin: 0 auto 0 1em;
+  margin: 0 auto 0;
   padding: 0 1em;
   max-width: 1020px;
   background: #FFF; }
@@ -1115,8 +1115,15 @@ h6 {
   margin-right: 2em;
   flex-basis: 70%;
   flex-grow: 3; }
+  #primary article.post {
+    margin: 2em 0 2em 0;
+    padding-bottom: 0.5em; }
+    #primary article.post::after {
+      content: "";
+      clear: both;
+      display: table; }
   #primary .entry-header {
-    margin-bottom: 2em; }
+    margin-bottom: 1em; }
     #primary .entry-header .bg {
       display: flex;
       align-items: flex-end;
@@ -1128,7 +1135,7 @@ h6 {
       #primary .entry-header .bg .entry-title {
         font-size: 3em;
         line-height: 1em;
-        margin: 0 0 0.33333em 0.66667em;
+        margin: 0 0 0.5em 0.66667em;
         color: white;
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
     #primary .entry-header small {
@@ -1163,7 +1170,7 @@ h6 {
 img.size-post-thumbnail {
   width: 100%;
   height: auto;
-  margin: 0 0 1em 0; }
+  margin: 0 0 0.5em 0; }
 
 img.size-medium {
   width: 100%;
@@ -1206,15 +1213,20 @@ a {
 .archive > article {
   clear: both; }
   .archive > article .entry-title {
-    font-size: 1.2em;
-    margin-bottom: 0.5em; }
+    font-size: 1.4em;
+    margin: 0; }
   .archive > article .post-thumbnail {
-    width: 33%;
+    width: 45%;
     float: left;
     margin-right: 1em; }
   .archive > article .entry-summary p {
     margin: 0;
     line-height: 1.3em; }
+  .archive > article .entry-footer {
+    text-align: right;
+    margin-top: 1em;
+    clear: both;
+    border-top: 2px solid #F6F6F6; }
 
 time.updated {
   display: none; }

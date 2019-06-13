@@ -17,7 +17,7 @@
 		<div class="box">
 			<?php get_sidebar( 'content-bottom' ); ?>
 			<p>
-				&copy; Copyright 2017 Stadtteilschule am Hafen.
+				&copy; Copyright 2019 Stadtteilschule am Hafen.
 				— <a href="/impressum/">Impressum</a>,
 				<a href="/datenschutz/">Datenschutz</a>
 			</p>
