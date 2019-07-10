@@ -24,6 +24,29 @@
   }
 }
 
+
+#masthead--large {
+  margin: 0 auto 0;
+  padding: 0 $spacer;
+  max-width: 1020px;
+  height: 65vh;
+  background-color: color($brand, 300);
+  background-image: url('https://schule-am-hafen.eu/wp-content/uploads/2019/01/DSC02466.jpeg');
+  // background-image: url('https://images.unsplash.com/photo-1538565773234-30befcc812c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80');
+  background-size: cover;
+  background-position: left bottom;
+  filter: brightness(90%) saturate(100%);
+
+  h1 {
+    margin: 0;
+    padding: $spacer;
+  }
+  .masthead-logo {
+    background-image: url(img/Stadtteilschule-am-Hafen-Logo--white-transparent.svg);
+  }
+
+}
+
 .masthead-logo {
   margin-left: $spacer*0.25;
   margin-bottom: $spacer*0.5;

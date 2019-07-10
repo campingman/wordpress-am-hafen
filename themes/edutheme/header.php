@@ -22,6 +22,26 @@
 
 <body <?php body_class(); ?>>
 
+
+<?php if ( is_front_page() && is_home() ) { ?>
+
+
+<header id="masthead--large" role="banner">
+	<h1>
+		<a class="masthead-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-label="Homepage">
+			<?php bloginfo( 'name' ); ?>
+		</a>
+	</h1>
+</header>
+<div class="box" style="margin:0 auto;">
+<h2 style="text-align:center;font-size:56px;max-width:1020px;margin:0;padding:20px; background:white;">Willkommen auf der Homepage der Stadtteilschule am Hafen!</h2>
+</div>
+
+
+
+
+<?php } else { ?>
+
 <header id="masthead" role="banner">
   <div class="box">
 		<h1>
@@ -59,6 +79,8 @@
 
   </div>
 </header>
+
+<?php } ?>
 
 <div id="page" class="site">
 	<div class="box">
