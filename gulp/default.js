@@ -7,7 +7,7 @@ var config = require('../gulpconfig');
 
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
-    runSequence = require('run-sequence');
+    runSequence = require('gulp4-run-sequence');
 
 
 gulp.task('default', function(callback) {
