@@ -201,6 +201,21 @@ h6, {
   }
 }
 
+/* VIDEO FIX */
+.wp-video {	
+	width: auto !important;
+}
+@media (max-width: 768px) {
+	.wp-video {	
+		width: 400px !important;
+	}
+}
+@media (max-width: 544px) {
+.wp-video {	
+		width: 300px !important;
+		height: auto;
+	}
+}
 
 // IMAGES
 
